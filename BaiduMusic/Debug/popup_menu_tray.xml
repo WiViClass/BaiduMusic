@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Window size="182,310" >  
+<VerticalLayout  pos="0,0,182,310" bkcolor="##FFf7f7f7">
+  <VerticalLayout pos="7,7,175,303"  float="true"   width="168" height="296" bkcolor="##FFf7f7f7" bordersize="1" >
+    <VerticalLayout  name="tray_play_Control" pos="0,0,168,97" float="true"  bkcolor="#FFf7f7f7">
+      <Button name="btn_play_tray_menu" pos="63,15,105,57"  float="true" normalimage=" file='Res\tray\btn_play_tray_menu.png' source='0,0,42,42'"  hotimage=" file='Res\tray\btn_play_tray_menu.png' source='42,0,84,42'"/>
+      <Button name="btn_pause_tray_menu" pos="63,15,105,57" float="true" normalimage=" file='Res\tray\btn_pause_tray_menu.png' source='0,0,42,42'" hotimage=" file='Res\tray\btn_pause_tray_menu.png' source='42,0,84,42'" visible="false"/>
+      <Button name="btn_prev_tray_menu" pos="15,15,57,57" float="true" normalimage=" file='Res\tray\btn_prev_tray_menu.png' source='0,0,42,42'" hotimage=" file='Res\tray\btn_prev_tray_menu.png' source='42,0,84,42'"/>
+      <Button name="btn_next_tray_menu" pos="111,15,153,57" float="true" normalimage=" file='Res\tray\btn_next_tray_menu.png' source='0,0,42,42'"  hotimage=" file='Res\tray\btn_next_tray_menu.png' source='42,0,84,42'"/>
+
+  
+    <Text name="tray_playing_song" pos="22,74,146,97" float="true" text="百度音乐" bkcolor="#FFf7f7f7"/>
+
+  </VerticalLayout>
+   
+	
+
+    <Control pos="5,97,163,98"  float="true" bkcolor="#FFd0d0d0"/>
+	
+    <VerticalLayout pos="0,98,168,133" float="true"  bkcolor="#FFf7f7f7">
+      <!--Slider name="104007" pos="49,|-10,-17,=20" min="0" max="100" value="0" orient="horz" tip-type="value" handle-mouse-wheel="1">
+        <Button pos="0,|-9,=18,=18" mark="thumb" normalimage=" file='Res\tray\lyric_opacity_slnameer_thumb"/>
+        <wnd pos="9,|-1,-9,=2" mark="value" normalimage=" file='Res\tray\lyric_opacity_slnameer_value"/>
+        <wnd pos="9,|-1,-9,=2" mark="back" normalimage=" file='Res\tray\lyric_opacity_slnameer_back"/>
+      </Slider>
+      <Button name="104006"  pos="18,|-15,=30,=30" normalimage=" file='Res\tray\btn_volume_tray_menu_small" tip="@mute_switch" handle-mouse-wheel="0"/>
+
+      <Button name="104013"  pos="18,|-15,=30,=30" normalimage=" file='Res\tray\btn_volume_tray_menu_small" tip="@mute_switch" handle-mouse-wheel="0" visible="0"/>
+      <Button name="104014"  pos="18,|-15,=30,=30" normalimage=" file='Res\tray\btn_volume_tray_menu_big" tip="@mute_switch" handle-mouse-wheel="0" visible="0"/>
+-->
+	</VerticalLayout>
+	
+    <Button name="mini_mode_tray_menu" pos="0,133,168,165" float="true" bkcolor="#FFf7f7f7" text="迷你模式" align="left" textpadding="22,10,0,0" textcolor="#FF686868" hotbkcolor="#FFd8efff"/>
+    <Button name="show_lrc_tray_menu" pos="0,165,168,197" float="true" bkcolor="#FFf7f7f7" text="显示桌面歌词" align="left" textpadding="22,10,0,0" textcolor="#FF686868" hotbkcolor="#FFd8efff"/>
+    <Button name="dplrc_show_lrc_tray_menu" pos="0,197,168,229" float="true" bkcolor="#FFf7f7f7" text="锁定桌面歌词" align="left" textpadding="22,10,0,0" textcolor="#FF686868" hotbkcolor="#FFd8efff"/>
+    <Button name="setting_tray_menu" pos="0,229,168,263" float="true" bkcolor="#FFf7f7f7" text="设置" align="left" textpadding="22,10,0,0" textcolor="#FF686868" hotbkcolor="#FFd8efff"/>
+    <Control pos="5,263,163,264"  float="true" bkcolor="#FFd0d0d0"/>
+    <Button name="exit_tray_menu" pos="0,264,168,296" float="true" bkcolor="#FFf7f7f7" text="退出程序" align="left" textpadding="22,10,0,0" textcolor="#FF686868" hotbkcolor="#FFd8efff"   />
+  </VerticalLayout>
+  </VerticalLayout>
+</Window>

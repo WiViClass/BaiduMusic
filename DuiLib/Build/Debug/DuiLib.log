@@ -1,0 +1,65 @@
+﻿生成启动时间为 2016/7/5 10:05:18。
+     1>项目“D:\BaiduVersion\BaiduMusic\DuiLib\DuiLib.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\Build\Debug\DuiLib.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D UILIB_EXPORTS /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Build\Debug/DuiLib.pch" /Fo".\Build\Debug\\" /Fd".\Build\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Core\UIControl.cpp
+         UIControl.cpp
+         所有输出均为最新。
+         所有输出均为最新。
+       ResourceCompile:
+         所有输出均为最新。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(D:\BaiduVersion\BaiduMusic\DuiLib\.\Build\Debug\DuiLib.dll) 与 Linker 的 OutputFile 属性值(D:\BaiduVersion\BaiduMusic\BaiduMusic\Debug\DuiLib_ud.dll)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(DuiLib) 与 Linker 的 OutputFile 属性值(DuiLib_ud)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../BaiduMusic/Debug/DuiLib_ud.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:.\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:".\Build\Debug\DuiLib.pdb" /TLBID:1 /BASE:"0x11000000" /DYNAMICBASE /NXCOMPAT /IMPLIB:"../lib/DuiLib_ud.lib" /MACHINE:X86 /DLL .\Build\Debug\DuiLib.res
+         .\Build\Debug\UIAnimate.obj
+         .\Build\Debug\UIListMult.obj
+         .\Build\Debug\log.obj
+         .\Build\Debug\StdAfx.obj
+         .\Build\Debug\UIlib.obj
+         .\Build\Debug\WinImplBase.obj
+         .\Build\Debug\stb_image.obj
+         .\Build\Debug\UIDelegate.obj
+         .\Build\Debug\Utils.obj
+         .\Build\Debug\XUnzip.obj
+         .\Build\Debug\UIBase.obj
+         .\Build\Debug\UIContainer.obj
+         .\Build\Debug\UIControl.obj
+         .\Build\Debug\UIDlgBuilder.obj
+         .\Build\Debug\UIManager.obj
+         .\Build\Debug\UIMarkup.obj
+         .\Build\Debug\UIRender.obj
+         .\Build\Debug\UIChildLayout.obj
+         .\Build\Debug\UIHorizontalLayout.obj
+         .\Build\Debug\UITabLayout.obj
+         .\Build\Debug\UITileLayout.obj
+         .\Build\Debug\UIVerticalLayout.obj
+         .\Build\Debug\UIActiveX.obj
+         .\Build\Debug\UIButton.obj
+         .\Build\Debug\UICheckBox.obj
+         .\Build\Debug\UICombo.obj
+         .\Build\Debug\UIComboBox.obj
+         .\Build\Debug\UIDateTime.obj
+         .\Build\Debug\UIEdit.obj
+         .\Build\Debug\UILabel.obj
+         .\Build\Debug\UIList.obj
+         .\Build\Debug\UIOption.obj
+         .\Build\Debug\UIProgress.obj
+         .\Build\Debug\UIRichEdit.obj
+         .\Build\Debug\UIScrollBar.obj
+         .\Build\Debug\UISlider.obj
+         .\Build\Debug\UIText.obj
+         .\Build\Debug\UITreeView.obj
+         .\Build\Debug\UIWebBrowser.obj
+            正在创建库 ../lib/DuiLib_ud.lib 和对象 ../lib/DuiLib_ud.exp
+         DuiLib.vcxproj -> D:\BaiduVersion\BaiduMusic\DuiLib\.\Build\Debug\DuiLib.dll
+       FinalizeBuildStatus:
+         正在删除文件“.\Build\Debug\DuiLib.unsuccessfulbuild”。
+         正在对“.\Build\Debug\DuiLib.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\BaiduVersion\BaiduMusic\DuiLib\DuiLib.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.69

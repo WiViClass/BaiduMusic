@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--歌曲列表-->
+<Window >
+	<VerticalLayout name="song_list_page" >
+
+		<TreeView name="treePlaylist" childpadding="10"  multipleitem="false" inset="0,0,0,0"  itembkcolor="#FFf7f7f7"    itemselectedbkcolor="#FF5dbcff"  >
+			<TreeNode text="本地歌单"   height="35" inset="0,10,0,0" itemselectedbkcolor="#FFccffff" itemattr="valign=&quot;vcenter&quot; font=&quot;3&quot; textpadding=&quot;12,0,0,0&quot;" folderattr="padding=&quot;10,5,0,0&quot; width=&quot;10&quot; height=&quot;10&quot;  float=&quot;true&quot; selectedimage=&quot;file='Res\list\close_triangle.png' source='0,0,6,10'  dest='0,0,6,10'  &quot; normalimage=&quot;file='Res\list\open_triangle.png'  source='0,0,10,6'  dest='0,0,10,6'  &quot;" >
+
+				<TreeNode text="本地歌单1" height="28" itemtextcolor="#FF383838" selitemtextcolor="#FFFFFFFF"  itemattr=" font=&quot;0&quot; textpadding=&quot;4,8,0,0&quot;" folderattr="width=&quot;22&quot; height=&quot;22&quot;  float=&quot;true&quot; selectedimage=&quot;file='Res\list\list_type_icon_select.png' source='88,0,110,22' &quot; normalimage=&quot;file='Res\list\list_type_icon.png' source='88,0,110,22' &quot;"/>					    			
+				<TreeNode text="本地歌单2" height="28" itemtextcolor="#FF383838" selitemtextcolor="#FFFFFFFF"  itemattr=" font=&quot;0&quot; textpadding=&quot;4,8,0,0&quot;" folderattr="width=&quot;22&quot; height=&quot;22&quot;  float=&quot;true&quot; selectedimage=&quot;file='Res\list\list_type_icon_select.png' source='88,0,110,22' &quot; normalimage=&quot;file='Res\list\list_type_icon.png' source='88,0,110,22' &quot;"/>					    			
+				<TreeNode text="本地歌单3" height="28" itemtextcolor="#FF383838" selitemtextcolor="#FFFFFFFF"  itemattr=" font=&quot;0&quot; textpadding=&quot;4,8,0,0&quot;" folderattr="width=&quot;22&quot; height=&quot;22&quot;  float=&quot;true&quot; selectedimage=&quot;file='Res\list\list_type_icon_select.png' source='88,0,110,22' &quot; normalimage=&quot;file='Res\list\list_type_icon.png' source='88,0,110,22' &quot;"/>					    			
+				<TreeNode text="本地歌单4" height="28" itemtextcolor="#FF383838" selitemtextcolor="#FFFFFFFF"  itemattr=" font=&quot;0&quot; textpadding=&quot;4,8,0,0&quot;" folderattr="  width=&quot;22&quot; height=&quot;22&quot;  float=&quot;true&quot; selectedimage=&quot;file='Res\list\list_type_icon_select.png' source='88,0,110,22' &quot; normalimage=&quot;file='Res\list\list_type_icon.png' source='88,0,110,22' &quot;"/>					    			
+				<TreeNode text="本地歌单5" height="28" itemtextcolor="#FF383838" selitemtextcolor="#FFFFFFFF"  itemattr=" font=&quot;0&quot; textpadding=&quot;4,8,0,0&quot;" folderattr="width=&quot;22&quot; height=&quot;22&quot;  float=&quot;true&quot; selectedimage=&quot;file='Res\list\list_type_icon_select.png' source='88,0,110,22' &quot; normalimage=&quot;file='Res\list\list_type_icon.png' source='88,0,110,22' &quot;"/>					    			
+				<TreeNode text="本地歌单6" height="28" itemtextcolor="#FF383838" selitemtextcolor="#FFFFFFFF"  itemattr=" font=&quot;0&quot; textpadding=&quot;4,8,0,0&quot;" folderattr="width=&quot;22&quot; height=&quot;22&quot;  float=&quot;true&quot; selectedimage=&quot;file='Res\list\list_type_icon_select.png' source='88,0,110,22' &quot; normalimage=&quot;file='Res\list\list_type_icon.png' source='88,0,110,22' &quot;"/>					    			
+				<TreeNode text="本地歌单7" height="28" itemtextcolor="#FF383838" selitemtextcolor="#FFFFFFFF"  itemattr=" font=&quot;0&quot; textpadding=&quot;4,8,0,0&quot;" folderattr="  width=&quot;22&quot; height=&quot;22&quot;  float=&quot;true&quot; selectedimage=&quot;file='Res\list\list_type_icon_select.png' source='88,0,110,22' &quot; normalimage=&quot;file='Res\list\list_type_icon.png' source='88,0,110,22' &quot;"/>					    			
+
+			</TreeNode>
+
+		</TreeView>
+
+	</VerticalLayout>
+
+</Window>

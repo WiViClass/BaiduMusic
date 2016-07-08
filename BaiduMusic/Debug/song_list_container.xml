@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--歌曲列表-->
+<Window >
+	<VerticalLayout>
+		<!--列表操作按钮-->
+		<HorizontalLayout  pos="0,0,825,47" float="true" height="47" width="825" >
+			<Button name="play_all" tooltip="播放列表中全部歌曲" float="true" pos="545,7,639,43" width="94" height="36" normalimage=" file='Res\list\play_all.png' source='0,0,94,36'" />
+			<Button name="add_local_song" tooltip="添加本地歌曲" float="true" pos="640,7,734,43" width="94" height="36" normalimage=" file='Res\list\add_local_song.png' source='0,0,94,36'" />
+			<Button name="sort" tooltip="更改排序" float="true"               pos="735,7,806,43" width="71" height="36" normalimage=" file='Res\list\sort.png' source='0,0,71,36'"   hotimage=" file='Res\list\sort.png' source='71,0,142,36'"/>
+		</HorizontalLayout>
+
+
+		<HorizontalLayout  pos="0,47,825,490"   float="true">
+			<MySongList name="list_music_file" pos="0,0,825,443" float="true" bottombordersize="0" bordercolor="#FFdddddd"  bkcolor="#FFFFFFFF" inset="0,0,0,0" vscrollbar="true" 
+			itembkcolor="#FFefefef"  itemtextcolor="#FF777777"  itemhottextcolor="#FF0033FF" itemaltbk="true" hscrollbar="false" menu="true" >
+
+
+				<!--歌曲列表-->
+
+				<ListHeader  menu="true" bordersize="1"  bordercolor="#FFd2d2d2" >
+					
+					<ListHeaderItem text="歌曲" font="2" align="left" textpadding="20,0,0,0"  dragable="false" rightbordersize="1" bordercolor="#FFd2d2d2"  width="315" height="26"/>
+					<ListHeaderItem text="歌手" font="2" align="left" textpadding="20,0,0,0" dragable="false" rightbordersize="1" bordercolor="#FFd2d2d2" width="204"  height="26"/>
+					<ListHeaderItem text="专辑" font="2" align="left" textpadding="20,0,0,0" dragable="false" rightbordersize="1" bordercolor="#FFd2d2d2" width="204"  height="26"/>
+					<ListHeaderItem text="时间" font="2" align="left" textpadding="20,0,0,0" dragable="false" width="102"/>
+			
+			</ListHeader>
+
+
+				<!--播放列表为空的显示-->
+			</MySongList>
+			
+			<VerticalLayout name="empty_song_list" pos="125,134,825,434" float="true"  width="700" height="300" visible="true" >	
+				<Control pos="230,0,328,98"  float="true" bkimage=" file='Res\empty\empty_image.png'" />
+				<Text pos="220,115,350,135" float="true" text=" 话语尽 , 音乐始-海涅"  textcolor="#FF9c9c9c" />
+			</VerticalLayout    >
+		
+		</HorizontalLayout>
+
+	</VerticalLayout>
+
+</Window>     

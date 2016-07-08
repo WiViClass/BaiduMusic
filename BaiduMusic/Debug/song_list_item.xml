@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Window size="182,356" > 
+
+<VerticalLayout float="true" pos="0,0,182,356" bordersize="1" bordercolor="#FFdddddd" bkcolor="#FFf7f7f7" >
+
+
+	<VerticalLayout name="121112" pos="7,7,175,349" float="true"  weight="168" height="342" bkcolor="#FFf7f7f7" >
+		<Button name="121101" pos="0,0,168,34 " float="true"  textpadding="22,10,0,8" bkcolor="#FFf7f7f7" hotbkcolor="#FFd8efff" text="下载" align="left" textcolor="#FF747474"/>
+		
+		<HorizontalLayout pos="0,34,168,68 " float="true" >
+			<!--Control pos="-12,|-5,=6,=10" skin="menu_arrow" /-->
+			<Button name="121102"  textpadding="22,10,0,8" bkcolor="#FFf7f7f7" hotbkcolor="#FFd8efff" text="添加到" align="left" textcolor="#FF747474"/>
+		</HorizontalLayout>
+		
+		<Button name="121103" pos="0,68,168,102 " float="true"  textpadding="22,10,0,8" bkcolor="#FFf7f7f7" hotbkcolor="#FFd8efff" text="收藏" align="left" textcolor="#FF747474"/>
+		<Button name="121104" pos="0,102,168,136" float="true"  textpadding="22,10,0,8" bkcolor="#FFf7f7f7" hotbkcolor="#FFd8efff" text="分享" align="left" textcolor="#FF747474"/>
+		
+		<HorizontalLayout pos="0,136,168,170 " float="true" >
+			<!--Control name="121113" pos="-12,|-5,=6,=10" skin="menu_arrow" /-->
+			<Button name="121109"  textpadding="22,10,0,8" bkcolor="#FFf7f7f7" hotbkcolor="#FFd8efff" text="发送到手机" align="left" textcolor="#FF747474"/>
+		</HorizontalLayout>
+		
+		<Control pos="0,170,168,171 " float="true"  bkcolor="#FFd0d0d0" enabled="false"/>
+		<Button name="121105" pos="0, 171 ,168,205 " float="true"  textpadding="22,10,0,8" bkcolor="#FFf7f7f7" hotbkcolor="#FFd8efff" text="打开文件所在的目录" align="left" textcolor="#FF747474"/>
+		<Button name="121114" pos="0,205,168 ,239" float="true"  textpadding="22,10,0,8" bkcolor="#FFf7f7f7" hotbkcolor="#FFd8efff" text="格式转换" align="left" textcolor="#FF747474"/>
+		<Button name="121106" pos="0, 239,168, 273 " float="true"  textpadding="22,10,0,8" bkcolor="#FFf7f7f7" hotbkcolor="#FFd8efff" text="删除" align="left" textcolor="#FF747474"/>
+		<Button name="121107" pos="0 , 273,168,307 " float="true"  textpadding="22,10,0,8" bkcolor="#FFf7f7f7" hotbkcolor="#FFd8efff" text="删除（包括本地文件）" align="left" textcolor="#FF747474"/>
+		<Control name="121110" pos="0,307 ,168 ,308" float="true"  bkcolor="#FFd0d0d0" enabled="false"/>
+		<Button name="121108" pos="0,308 ,168 ,342 " float="true"  textpadding="22,10,0,8" bkcolor="#FFf7f7f7" hotbkcolor="#FFd8efff" text="歌曲信息" align="left" textcolor="#FF747474"/>
+	</VerticalLayout>
+	
+
+	
+</VerticalLayout>
+</Window>

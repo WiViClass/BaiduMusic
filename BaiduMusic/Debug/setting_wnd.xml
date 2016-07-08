@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="700,508">		
+
+	<VerticalLayout   bkcolor="#FFFFFFFF"  >
+
+		<VerticalLayout pos="0,0,700,40" float="true"  bkcolor="#FFf0f0f0"  >    
+			<Control  pos="22,10,40,30" textcolor="#FF333333" text="设置"  />
+			<Button name="Setting_wnd_close"  float="true"  normalimage=" file='Res\btn_general\btn_login_close.png' source='0,0,32,35' " pos="668,0,32,35" tip="关闭" />
+
+		</VerticalLayout>
+
+		<HorizontalLayout pos="0,40,700,508"    weight="700" height="468" float="true"  bkcolor="#FFFFFFFF" >
+
+			<!--Control pos="187,0,187,468"   bkcolor="#FFf0f0f0"/-->
+
+			<VerticalLayout pos="0,0,700,413" float="true" bkcolor="#FFf7f7f7" >
+				<List pos="20,0,167,413" float="true" childpadding="5" itemtextpadding="45,0,0,0" itembkcolor="#FFf7f7f7" itemtextcolor="#FF000000" > 
+
+					<ListLabelElement text="常规设置" height="30"/>
+					<ListLabelElement text="下载设置" height="30"/>
+					<ListLabelElement text="网络设置" height="30"/>
+					<ListLabelElement text="快捷键"   height="30"/>
+					<ListLabelElement text="音频输出" height="30"/>
+					<ListLabelElement text="音效插件" height="30"/>
+					<ListLabelElement text="扫描管理" height="30"/>
+
+				</List>
+				<VerticalLayout pos="188,0,700,464138">
+				</VerticalLayout>
+			</VerticalLayout>
+
+			<VerticalLayout  pos="0,413,700,468" float="true"   >
+				<Button id="30002" pos ="453,0,458,35" bkcolor="#FF3da5ff" textpadding="0,0,0,4" text="全部保存"  />
+				<Button id="30003" pos ="575,0,680,35" bkcolor="#FFf0f0f0" textpadding="0,0,0,4" text="关闭" />
+
+			</VerticalLayout>
+		</HorizontalLayout>
+
+	</VerticalLayout>
+</Window>

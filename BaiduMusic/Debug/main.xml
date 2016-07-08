@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 主窗口，初始尺寸1002*642、窗口不可改变大小、") -->
+<Window size="1002,642" caption="0,0,0,30" >
+	<!--字体-->
+	<Include source="font.xml" />
+
+	<!--边框大小为1-->
+	<VerticalLayout  float="true"  pos="0,0,1002,642"  bordersize="1" bordercolor="#FF202020"  >
+		<VerticalLayout  float="true"  pos="1,1,1000,640" width="1000" height="640" >
+			<!-- 标题栏区 -->
+			<HorizontalLayout float="true"  pos="0,0,1000,570" width="1000" height="570"  >
+
+				<HorizontalLayout  float="true"  pos=" 0,0,1000,112" width="1000" height="112" bkimage=" file='Res\background\main_bg0.png'" >
+					<!--账号登录，搜索"  -->
+					<HorizontalLayout float="true" pos=" 0,0, 300,80" width="300" height="80" >
+						<Button name="MainMenu" tooltip="主菜单" float="true" pos="5,8,87,26" width="82" height="18" normalimage=" file='Res\logo\logo.png'" />
+						<Button name="default_avatar" tooltip="未登录" float="true" pos="18,37,53,72" width="35" height="35" normalimage=" file='Res\default_avatar.png'" />
+
+						<Button name="btn_search_frame" float="true" pos="71,48,255,69" width="184" height="21" normalimage=" file='Res\search\btn_search_frame.png' source='0,0,184,21'" />
+						<Button name="search_line" float="true" pos="233,50,250,67" width="1" height="17" normalimage=" file='Res\search\search_line.png'" />
+						<Button name="btn_search" tooltip="搜索" float="true" pos="234,50,251,68" width="18" height="18" normalimage=" file='Res\search\btn_search.png' source='0,0,18,18'" hotimage=" file='Res\search\btn_search.png' source='18,0,36,18'" />
+						<Edit name="search_edit" text="本地、在线都能搜哦"  font="2" textcolor="FF777777"  float="true" pos="78,48,230,69" width="142" height="21" normalimage=" file='Res\search\search_edit.png'" />
+					</HorizontalLayout>
+
+					<!--tab列表，在线音乐、我的音乐、我的设备三个选项"  -->
+					<HorizontalLayout float="true" pos=" 300,0, 800,80" width="500" height="80">
+						<Option name="my_music_tab" float="true" pos="52,12,116,76" width="64" height="64" normalimage=" file='Res\tab\my_music_tab.png' source='0,0,64,64'" hotimage=" file='Res\tab\my_music_tab.png' source='64,0,128,64'" selectedimage=" file='Res\tab\my_music_tab.png' source='64,0,128,64'"  pushedimage=" file='Res\tab\my_music_tab.png' source='64,0,128,64'" selected="true" group="maintab" />
+						<Option name="online_music_tab" float="true" pos="166,12,230,76" width="64" height="64" normalimage=" file='Res\tab\online_music_tab.png' source='0,0,64,64'" hotimage=" file='Res\tab\online_music_tab.png' source='64,0,128,64'" selectedimage=" file='Res\tab\online_music_tab.png' source='64,0,128,64'" pushedimage=" file='Res\tab\online_music_tab.png' source='64,0,128,64'"   group="maintab" />
+						<Option name="my_device_tab" float="true" pos="282,12,346,76" width="64" height="64" normalimage=" file='Res\tab\my_device_tab.png' source='0,0,64,64'" hotimage=" file='Res\tab\my_device_tab.png' source='64,0,128,64'" selectedimage=" file='Res\tab\my_device_tab.png' source='64,0,128,64'" pushedimage=" file='Res\tab\my_device_tab.png' source='0,0,64,64'" group="maintab" />
+					</HorizontalLayout>
+
+					<!--常规按钮 最小化、关闭、工具、设置"  -->
+					<HorizontalLayout float="true" pos=" 800,0, 1000,80"  width="200" height="80">
+						<Button name="btn_tools" tooltip="小工具" float="true" pos="109,7,133,31" width="24" height="24" normalimage=" file='Res\btn_general\btn_tools.png' source='0,0,24,24'" />
+						<Button name="btn_setting" tooltip="设置" float="true" pos="133,7,157,31" width="24" height="24" normalimage=" file='Res\btn_general\btn_setting.png' source='0,0,24,24'" />
+						<Button name="minbtn" tooltip="最小化" float="true" pos="157,7,176,31" width="24" height="24" normalimage=" file='Res\btn_general\btn_minimize.png' source='0,0,24,24'" />
+						<Button name="btn_close" tooltip="关闭" float="true" pos="176,7,200,31" width="24" height="24" normalimage=" file='Res\btn_general\btn_close.png' source='0,0,24,24'"   hotimage=" file='Res\btn_general\btn_close.png' source='48,0,72,24'"/>
+
+					</HorizontalLayout>
+				</HorizontalLayout>
+
+				<!--tab列表，我的音乐、在线音乐、我的设备选项"  -->
+				<TabLayout name="tabTest" float="true" pos="0,80,1000,570" width="1000" height="490" >
+					<!--选项-我的音乐  -->
+					<HorizontalLayout name="song_list_page" float="true" pos="0,0,1000,490" bkcolor="#FFf7f7f7" >
+						<HorizontalLayout  float="true" pos="0,0,174,490" bkcolor="#FFf7f7f7" >
+							<Include source="song_list.xml" />  
+						</HorizontalLayout>
+						<Control  float="true" pos="174,0,175,490" bkcolor="#FFd2d2d2" />
+						<VerticalLayout  float="true" pos="175,0,1000,490" bkcolor="#FFf7f7f7" >
+							<Include source="song_list_container.xml" /> 
+						</VerticalLayout>
+					</HorizontalLayout>
+
+					<!--选项-在线音乐  -->
+					<HorizontalLayout  float="true" pos="0,31,1000,490" bkcolor="#FFf7f7f7" >
+						<!--Include source="browser.xml" /-->
+						<RichEdit  text=" محاضرة  الرموز "   pos="100,100,800,400" float="true" bordersize="1" bordercolor="#FF000000" >
+						
+						</RichEdit>
+						
+					</HorizontalLayout>
+
+					<!--选项-我的设备  -->
+					<HorizontalLayout  float="true" pos="0,0,1000,490"  >
+						<Include source="device_list.xml" />
+					</HorizontalLayout>
+
+				</TabLayout>
+
+			</HorizontalLayout>
+
+			<!--播放操作区域  -->
+			<HorizontalLayout float="true" pos=" 0,570, 1000,640" width="1000" height="70">
+				<!-- 播放暂停\上下曲  -->
+				<HorizontalLayout float="true" pos=" 0,0, 200,70" width="200" height="70" bkcolor="#FF393939">
+					<Button name="btn_play_prev" tooltip="上一曲" float="true" pos="16,11,66,61" width="50" height="50" normalimage=" file='Res\btn_play\btn_play_prev.png' source='0,0,50,50'" hotimage=" file='Res\btn_play\btn_play_prev.png' source='50,0,100,50'" />
+					<Button name="btn_play" tooltip="播放" float="true" pos="61,0,131,70" width="70" height="70" normalimage=" file='Res\btn_play\btn_play.png' source='0,0,70,70'" hotimage=" file='Res\btn_play\btn_play.png' source='70,0,140,70'" />
+					<Button name="btn_pause" tooltip="暂停" float="true" pos="61,0,131,70" width="70" height="70" normalimage=" file='Res\btn_play\btn_pause.png' source='0,0,70,70'" hotimage=" file='Res\btn_play\btn_pause.png' source='70,0,140,70'" visible="false" />
+
+					<Button name="btn_play_next" tooltip="下一曲" float="true" pos="126,11,176,61" width="50" height="50" normalimage=" file='Res\btn_play\btn_play_next.png' source='0,0,50,50'"  hotimage=" file='Res\btn_play\btn_play_next.png' source='50,0,100,50'"  pushedimage=" file='Res\btn_play\btn_play_next.png' source='0,0,50,50'"  />
+				</HorizontalLayout>
+				<!--进度条、音质、时间"  -->
+				<HorizontalLayout float="true" pos=" 200,0, 800,70" width="600" height="70" bkcolor="#FF2D2D2D">
+					<Control name="default_album_logo" float="true" pos="8,11,58,61" width="50" height="50" bkimage=" file='Res\logo\default_album_logo.png'" />
+					<MyAlbum name="current_album_logo"  float="true"  visible="false"  pos="8,11,58,61" width="50" height="50"  />
+					
+					<HorizontalLayout pos="66,2,600,32" float="true" weight="534" height="30" >
+
+						<Text  name="playing_song_name" pos="0,0,276,30" float="true" text="百度音乐 听到极致"  valign="vcenter" textpadding="0,10,0,0"  textcolor="#FFdddddd" />
+						<HorizontalLayout pos="276,0,534,30" float="true" weight="258" height="30" >
+							<Button float="true"  pos="0,1,30,31" weight="30" height="30" normalimage=" file='Res\btn_play\btn_radio_dislike.png'  source='0,0,30,30' " visible="0" tooltip="不喜欢这首歌"/>
+
+							<Button  pos="30,2,60,30" float="true" weight="30" height="30" normalimage=" file='Res\btn_play\btn_download.png' source='0,0,30,30'" visible="0" />
+							<Button  pos="60,2,90,30" float="true" weight="30" height="30" normalimage=" file='Res\btn_play\btn_cloud_operate.png' source='0,0,30,30'" visible="0" />
+							<Button  pos="90,2,120,30" float="true" weight="30" height="30" normalimage=" file='Res\btn_play\btn_song_share.png' source='0,0,30,30' "   tooltip="歌曲分享" visible="0"  />
+							<Button  pos="125,5,188,27" float="true" weight="63" height="22" normalimage=" file='Res\btn_play\btn_recommend.png' source='0,0,63,22' " tooltip="听相似歌曲" visible="0"  />
+
+							<Button  pos="195,5,258,27"  weight="63" height="22" float="true" normalimage=" file='Res\btn_play\btn_high_quality.png' source='0,0,63,22' " tooltip="高品质开关" />
+						</HorizontalLayout>
+					</HorizontalLayout>
+					<!--播放进度条-->
+					<HorizontalLayout  pos="58,30,600,70" weight="542" float="true" >
+
+						<Slider name="sliderPlay" pos="0,1,499,27" float="true"  weight="499" height="26" 
+						bkimage=" file='Res\slider\play_slider_bg2.png' "
+						foreimage=" file='Res\slider\play_slider_value2.png' "
+							min="0" max="1000" value="0" hor="true"  
+							thumbimage="file='Res\slider\play_slider_thumb_animate.png' " 
+							thumbhotimage="file='Res\slider\play_slider_thumb_animate.png' " 
+							thumbpushedimage="file='Res\slider\play_slider_thumb_animate2.png' " thumbsize="21,21" />
+						<!--播放时间-->
+						<Text name="text_play_time" float="true" pos="500,5,542,25" text="00:00" font="2" textcolor="#FFFFFFFF" align="center"  />
+					</HorizontalLayout>			
+
+				</HorizontalLayout>
+				<!--音量、歌词、循环、列表"  -->
+				<HorizontalLayout float="true" pos=" 800,0, 1000,70" width="200" height="70" bkcolor="#FF393939">
+					<Button name="btn_volume_big" tooltip="音量开关" float="true" pos="12,14,66,58" width="44" height="44" normalimage=" file='Res\btn_play\btn_volume_big.png' source='0,0,44,44'" />
+					<Button name="btn_lyric" tooltip="写真歌词" float="true" pos="66,14,110,70" width="44" height="44" normalimage=" file='Res\btn_lrc\btn_lyric.png' source='0,0,44,44'" hotimage=" file='Res\btn_lrc\btn_lyric.png' source='44,0,88,44'"  />
+					<Button name="btn_play_mode_circle" tooltip="列表循环" float="true" pos="110,14,154,58" width="44" height="44" normalimage=" file='Res\btn_play\btn_play_mode_circle.png' source='0,0,44,44'" />
+					<Button name="btn_playing_list" tooltip="播放队列" float="true" pos="154,14,198,58" width="44" height="44" normalimage=" file='Res\btn_play\btn_playing_list.png' source='0,0,44,44'"  hotimage=" file='Res\btn_play\btn_playing_list.png' source='44,0,88,44'" />
+				</HorizontalLayout>
+			</HorizontalLayout>
+
+		</VerticalLayout>
+	</VerticalLayout>
+</Window>
+

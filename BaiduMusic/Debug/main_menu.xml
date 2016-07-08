@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="182,209">					
+<VerticalLayout  pos="0,0,182,209" bkcolor="##FFFF00FF">
+
+  <VerticalLayout pos="7,7,175,202"  float="true" width="168" height="195" bkcolor="#FFf7f7f7"> 
+   
+    <Button name="menu_setting" pos="0,0,168,32" float="true"   bkcolor="#FFf7f7f7"  text="设置" align="left" textpadding="22,10,0,0"  textcolor="#FF686868"     hotbkcolor="#FFd8efff"  />
+   
+   <Control pos="5,33,163,34" float="true"  bkcolor="#FFd0d0d0" enabled="false" />
+	   <Button name="menu_mini" pos="0,34,168,66" float="true"   bkcolor="#FFf7f7f7" text="迷你模式" align="left"  textpadding="22,10,0,0" textcolor="#FF686868"  enabledeffect="true"  enabledshadow="true" enabledstroke="true" transtext="20" rhaa="2" hotbkcolor="#FFd8efff"  />
+    <Button name="menu_lrc" pos="0,66,168,98" float="true"   bkcolor="#FFf7f7f7" text="显示桌面歌词" align="left" textpadding="22,10,0,0" textcolor="#FF686868"  enabledeffect="true"  enabledshadow="true" enabledstroke="true" transtext="30" rhaa="3" hotbkcolor="#FFd8efff"   />
+    
+	<VerticalLayout pos="0,98,168,130" float="true" >
+      <!--Control pos="-12,|-5,=6,=10" bkcolor="menu_arrow" /-->
+      <Button name="menu_help" pos="0,0,168,32" float="true"   bkcolor="#FFf7f7f7" text="反馈及帮助" align="left"  textpadding="22,10,0,0" textcolor="#FF686868"  enabledeffect="true"  enabledshadow="true" enabledstroke="true" transtext="40" rhaa="4" hotbkcolor="#FFd8efff"  />
+    </VerticalLayout>
+	
+    <Control pos="5,130,163,131"  float="true" bkcolor="#FFd0d0d0"/>
+    <Button name="menu_change_account" pos="0,131,168,163" float="true"   bkcolor="#FFf7f7f7" text="更换账号" align="left"  textpadding="22,10,0,0" textcolor="#FF686868"  enabledeffect="true"  enabledshadow="true" enabledstroke="true" transtext="50" rhaa="5" hotbkcolor="#FFd8efff"  />
+    <Button name="exit" pos="0,163,168,195" float="true"   bkcolor="#FFf7f7f7" text="退出程序" align="left"  textpadding="22,10,0,0" textcolor="#FF686868"  enabledeffect="true"  enabledshadow="true" enabledstroke="true" hotbkcolor="#FFd8efff"   />
+  
+
+  </VerticalLayout>
+
+</VerticalLayout>
+</Window>

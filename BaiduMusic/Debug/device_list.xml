@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--tab页面我的设备-->
+<Window >
+	<HorizontalLayout name="my_device_page"   bkcolor="#FFf7f7f7" >
+		<HorizontalLayout  float="true" pos="0,0,720,490"  >
+
+			<HorizontalLayout  float="true" pos="93,154,646,377" wight="554"  height="223" bkimage=" file='Res\device\device_list_connect_bg.png'" >
+				<HorizontalLayout pos="169,73,449,163" weight="280" height="90" float="true" >
+					<Text pos="8,0,270,20" font=" 4" float="true" text="使用WIFI连接手机" textcolor="#FF333333" />
+					<Button  pos="8,70,197,90"  float="true" text="如何获取验证码？" textcolor="#FF1195ea" align="left" />
+
+					<HorizontalLayout float="true" pos="0,35,196,77"  weight="196" height="32"   bkimage=" file='Res\device\connect_frame.png' source='0,0,196,32'"  >
+
+					</HorizontalLayout>
+					<Edit float="true" pos="8,39,188,63" bkcolor="#FFFFFFFF"  font="2" text="请输入验证码" textcolor="#FFafafaf"/>				
+
+					<Button float="true" pos="206,35,278,67" weight="72" height="32" normalimage=" file='Res\device\device_connect.png' source='0,0,72,32'" textcolor="#FFFFFFFF" text="连接设备" >
+					</Button>
+				</HorizontalLayout>
+			</HorizontalLayout>
+		</HorizontalLayout>
+		<!--右侧广告-->
+		<HorizontalLayout  float="true" pos="720,0,1000,490" bkimage=" file='Res\device\device_ad.png'" >
+		</HorizontalLayout>
+	</HorizontalLayout>
+
+</Window>
